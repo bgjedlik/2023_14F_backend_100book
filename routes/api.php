@@ -19,3 +19,6 @@ use App\Http\Controllers\BookController;
 //     return $request->user();
 // });
 Route::get('/books',[BookController::class,'index']);
+Route::get('/get-all-authors',[BookController::class,'getAllAuthors']);
+Route::get('/book-by-author/{authorName}',[BookController::class,'bookByAuthor']);
+
